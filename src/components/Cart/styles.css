@@ -1,0 +1,11 @@
+.cart-container {
+    position: fixed;
+    background: white;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    max-width: 850px;
+    height: 100vh;
+    z-index: 3;
+    transition: 0.3s;
+}

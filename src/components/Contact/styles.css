@@ -1,0 +1,102 @@
+.contact-container {
+    border: 2px solid rgb(227, 216, 196);
+    height: 80%;
+    width: auto;
+    min-width: 80%;
+    display: flex;
+    position: relative;
+    flex-flow: column nowrap;
+}
+
+.contact-description {
+    height: 42%;
+    padding-top: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.contact-description-contents {
+    font-family: 'Josefin Sans';
+    color: white;
+    text-shadow: 0px 0px 0.1em rgba(255,255,255,1);
+    width: 100%;
+    height: 75%;
+    display: flex;
+}
+.contact-description-what {
+    width: 50%;
+    height: 100%;
+}
+
+.contact-description-list {
+    letter-spacing: 0.1em;
+}
+
+.contact-title {
+    font-family: 'HYPE';
+    color: white;
+    letter-spacing: 0.05em;
+    font-size: 4em;
+    height: 25%;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+.contact-title-get {
+    font-family: 'HYPE';
+    color: white;
+    letter-spacing: 0.05em;
+    font-size: 4em;
+    height: 25%;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-subtitle {
+    font-family: 'Josefin Sans';
+    letter-spacing: 0.1em;
+    color: white;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+.contact-getintouch {
+    height: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+}
+
+.contact-information-list {
+    color: white;
+    text-align: right;
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+}
+
+.contact-information-list-items {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    font-family: 'Josefin Sans';
+    letter-spacing: 0.1em;
+    color: white;
+    font-size: 1em;
+}
+
+.contact-bg {
+    height: 100%;
+    position: absolute;
+    right: 10vw;
+    z-index: -1;
+}

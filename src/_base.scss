@@ -1,0 +1,16 @@
+
+
+@mixin absolute-center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@mixin text($font-size) {
+  text-shadow: 0px 0px 0.05em  rgba(172,172,172,0.6);
+  color: rgb(30,30,30);
+  font-size: $font-size;
+}

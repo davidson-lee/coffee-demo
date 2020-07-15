@@ -1,0 +1,26 @@
+.App {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li:before {
+  content: '+';
+  padding-right: 0.5em;
+  color: white;
+}
+
+li:hover {
+  content: '-';
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}

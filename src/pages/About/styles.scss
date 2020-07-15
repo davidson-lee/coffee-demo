@@ -1,0 +1,257 @@
+@use 'src/base';
+
+.about {
+    width: 100%;
+    margin-top: 90px;
+    font-size: 16px;
+}
+.about-top {
+    width: 100%;
+    min-height: 500px;
+    height: calc(95vh - 90px);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+.about-top-title-container {
+    margin-top: 6vh;
+    margin-left: 12vw;
+}
+.about-top-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2.5em;
+    margin-top: 2.5em;
+    background: rgb(85, 87, 89);
+    border: 2px solid rgba(255,255,255,0.1);
+    color: rgb(255,255,255);
+    transition-duration: 200ms;
+    box-shadow: 0px 0px 5px 0px rgba(85, 87, 89, 0.75);
+}
+.about-top-button:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+.about-top-button-text {
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    padding: 0;
+    margin: 0;
+    font-size: 1.3em;
+    text-shadow: 0px 0px 0.1em rgba(205,206,207,0.3);
+}
+.about-top-button:hover {
+    cursor: pointer;
+}
+.about-prospectus-button {
+    font-weight: bold;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background: rgba(31,56,84, 1);
+    color: rgb(255,255,255);
+    transition-duration: 200ms;
+    box-shadow: 0px 0px 5px 0px rgba(85, 87, 89, 0.75);
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+    font-size: 1em;
+    text-shadow: 0px 0px 0.1em rgba(205,206,207,0.3);
+}
+
+.about-title {
+    font-family: 'HYPE';
+    font-size: 9.5em;
+    line-height: 0.65em;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 0.15em;
+    padding-left: 0.35em;
+    text-shadow: 0px 0px 2px white;
+    box-shadow: inset 0px -0.26em 0px 0px rgb(186, 155, 103)
+}
+.about-photo-top {
+    height: 85vh;
+    width: 33vw;
+    top:0;
+    position: absolute;
+    transition: 0.3s;
+    z-index: 2;
+    border-left: 10px solid rgb(255, 255, 255);
+    border-right: 10px solid rgb(255, 255, 255);
+    border-bottom: 10px solid rgb(255, 255, 255);
+    right: calc(8vw + 50px);
+    object-fit: cover;
+    object-position: 30% 50%;
+}
+.about-top-bg {
+    position: fixed;
+    left: 5.8vw;
+    z-index: -10;
+    width: 85vw;
+    height: 115vh;
+    filter: blur(4px);
+    opacity: 0.3;
+}
+.about-bottom {
+    width: 100%;
+    display: flex;
+    background: black;
+    position: relative;
+}
+.about-photo-bottom {
+    position: absolute;
+    object-fit: cover;
+    object-position: 0% 35%;
+    filter: blur(3px) brightness(50%);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.about-photo-bottom-white {
+    position: absolute;
+    object-fit: cover;
+    object-position: 0% 35%;
+    transform: scaleX(-1);
+    filter: blur(2px) contrast(100%) brightness(100%) saturate(110%) opacity(100%);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.about-bottom-container {
+    display: flex;
+    z-index: 0;
+}
+.about-subtitle {
+    font-family: 'HYPE';
+    display: inline-block;
+    font-size: 3em;
+    line-height: 0.65em;
+    margin-top: 0;
+    margin-bottom: 0.6em;
+    letter-spacing: 0.015em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-top: 8rem;
+    text-shadow: 0px 0px 7px rgba(0,0,0,1); 
+    box-shadow: inset 0px -0.25em 0px 0px rgb(186, 155, 103)
+}
+.about-text-contents {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-family: 'Josefin Sans';
+    font-weight: light;
+    text-align: left;
+    font-size: 1.5em;
+    flex: 1;
+    height: 100%;
+}
+.about-photo-container {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.roast {
+    margin-left: 4.5em;
+    background: rgba(31,56,84, 1);
+}
+.about-text {
+    margin-bottom: 8rem;
+}
+
+@media only screen and (max-width: 1365px) {
+    .about {
+        font-size: 14px;
+    }
+    .about-photo-top {
+        display: none;
+    }
+    .about-text-contents {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .about-subtitle {
+        padding-top: 6rem;
+    }
+    .about-prospectus-button {
+        margin-bottom: 6rem;
+    }
+    .about-text {
+        margin-bottom: 6rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .about {
+        font-size: 10px;
+    }
+    .about-photo-top {
+        display: none;
+    }
+    .about-text-contents {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .about-subtitle {
+        padding-top: 6rem;
+    }
+    .about-prospectus-button {
+        margin-bottom: 6rem;
+    }
+    .about-text {
+        margin-bottom: 6rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .about {
+        font-size: 10px;
+        margin-top: 60px;
+    }
+    .about-title {
+        font-size: 5.5em;
+    }
+    .about-photo-top {
+        display: none;
+    }
+    .about-text-contents {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .about-subtitle {
+        padding-top: 4rem;
+    }
+    .about-prospectus-button {
+        margin-bottom: 4rem;
+    }
+    .about-top-button {
+        padding: 1em 1em;
+        margin-top: 2.5em;
+    }
+    .roast {
+        margin-left: 1.5em;
+    }
+    .about-photo-container {   
+        display: none;
+    }
+    .about-subtitle {
+        font-size: 2.5em;
+    }
+    .about-text {
+        margin-bottom: 4rem;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .about-subtitle {
+        font-size: 2.3em;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .about-top-title-container {
+        margin-top: 25%;
+    }
+}

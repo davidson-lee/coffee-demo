@@ -1,0 +1,144 @@
+.machines {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.machines-top {
+    width: 100%;
+    max-width: 1536px;
+    margin-top: 110px;
+    height: calc(100vh - 210px);
+    display: flex;
+    position: relative
+}
+.machine-top-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+.machines-top-info-container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 30%;
+    margin-top: 12%;
+}
+.machine-image-container {
+    position: relative;
+    width: 60%;
+    padding-top: 60%;
+    border: 3px solid rgb(169,169,169);
+    background: white;
+    object-fit: cover;
+}
+.machine-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100%;
+    max-width: 100%;
+    filter: grayscale(20%) contrast(120%)
+}
+.machine-image-bg {
+    position: absolute;
+    margin: auto;
+    max-width: 50%;
+    max-height: 100%;
+}
+.machines-brands-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.machine-video-container {
+    position: absolute;
+    left: 38%;
+    top: 13%;
+    width: 780px;
+    height: 440px;
+    background: rgba(255,255,255,0.2);
+    border: 3px solid rgb(169,169,169);
+}
+
+.machines-bottom {
+    width: 80%;
+    height: calc(85vh - 120px);
+    display: flex;
+    position: relative;
+}
+.machines-contents {
+    font-family: 'Josefin Sans';
+    text-shadow: 0px 0px 0.05rem  rgba(172,172,172,0.6);
+    color: rgb(30,30,30);
+    font-weight: lighter;
+    text-align: left;
+    margin-top: 2em;
+    letter-spacing: 0.05rem;
+    font-size: 1.1rem;
+    line-height: 1.30rem;
+    width: 80%;
+}
+
+@media only screen and (max-width: 1280px) {
+    .machines {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .machines {
+        font-size: 10px;
+    }
+    .machines-top {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .machine-top-image-container {
+        position: relative;
+        width: 75vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .machine-image-container {
+        position: relative;
+        width: 75%;
+        padding-top: 75%;
+        border: 3px solid rgb(169,169,169);
+        background: white;
+        display: flex;
+        justify-content: center;
+    }
+    .machines-top-info-container {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 80vw;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .machines-contents {
+        width: 100%;
+    }
+    .machine-image-bg {
+        position: absolute;
+        margin: auto;
+        width: 100vw;
+        height: 100vw;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    .machines-top-info-container {
+        width: 60vw;
+    }
+}
